@@ -1,1 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 @import "tailwindcss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+body {
+  font-family: "Lucida Console", "Monaco", monospace;
+  background: linear-gradient(120deg, #f7f9fb 0%, #e3eafc 100%);
+  margin: 0;
+  color: #222;
+  line-height: 1.6;
+}
