@@ -1,23 +1,29 @@
 ---
+import type { TranslationKey } from "../../i18n/translations";
 
+interface Props {
+  t: TranslationKey;
+}
+
+const { t } = Astro.props;
 ---
 
 <div class="mt-8 text-center">
   <a
     href="mailto:neeravgala1994@gmail.com"
     class="text-black no-underline mx-2.5 font-medium transition-colors duration-200 hover:text-blue-800"
-    >Email</a
+    >{t.email}</a
   > |
   <a
     href="https://www.linkedin.com/in/neeravnemchandgala/"
     target="_blank"
     class="text-black no-underline mx-2.5 font-medium transition-colors duration-200 hover:text-blue-800"
-    >LinkedIn</a
+    >{t.linkedin}</a
   > |
   <a
     href="https://github.com/PyMyCode"
     target="_blank"
     class="text-black no-underline mx-2.5 font-medium transition-colors duration-200 hover:text-blue-800"
-    >GitHub</a
+    >{t.github}</a
   >
 </div>
