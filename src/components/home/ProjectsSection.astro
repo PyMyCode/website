@@ -1,0 +1,69 @@
+---
+import type { TranslationKey } from "../../i18n/translations";
+
+interface Props {
+  t: TranslationKey;
+}
+
+const { t } = Astro.props;
+---
+
+<div class="mb-8">
+  <h2 class="text-black mt-8 mb-2 text-2xl font-bold tracking-wide">
+    {t.projects}
+  </h2>
+  <div
+    class="bg-gray-50 rounded-lg p-4 mb-3 shadow-sm transition-shadow duration-300 hover:shadow-lg"
+  >
+    <strong>{t.thesis.title}</strong><br />
+    {t.thesis.description}<br />
+    <img
+      src="/assets/presentation_filler.jpg"
+      alt="Thesis presentation"
+      class="w-full max-w-[600px] h-auto mt-4"
+    />
+  </div>
+  <div
+    class="bg-gray-50 rounded-lg p-4 mb-3 shadow-sm transition-shadow duration-300 hover:shadow-lg"
+  >
+    <strong>{t.realrobo.title}</strong><br />
+    {t.realrobo.description}
+    <figure class="my-4 mx-0 relative">
+      <video
+        class="w-full max-h-80 object-cover rounded-xl block"
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        aria-describedby="intro-desc"
+      >
+        <source src="/assets/intro.mp4" type="video/mp4" />
+        {t.realrobo.videoNotSupported}
+      </video>
+      <figcaption
+        id="intro-desc"
+        class="absolute h-px w-px overflow-hidden clip-[rect(1px,1px,1px,1px)] whitespace-nowrap"
+      >
+        {t.realrobo.videoAlt}
+      </figcaption>
+    </figure>
+  </div>
+  <div
+    class="bg-gray-50 rounded-lg p-4 mb-3 shadow-sm transition-shadow duration-300 hover:shadow-lg"
+  >
+    <strong>{t.gtech_paper.title}</strong><br />
+    {t.gtech_paper.description}<br />
+    {t.gtech_paper.articleLink} <a
+      href="https://arxiv.org/abs/2508.01350"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-blue-800 hover:underline">https://arxiv.org/abs/2508.01350</a
+    >
+    <img
+      src="/assets/cnn.jpg"
+      alt="CNN architecture diagram"
+      class="w-full h-auto mt-4"
+    />
+  </div>
+</div>

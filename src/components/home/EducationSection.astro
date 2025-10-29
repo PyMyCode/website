@@ -1,0 +1,53 @@
+---
+import type { TranslationKey } from "../../i18n/translations";
+
+interface Props {
+  t: TranslationKey;
+}
+
+const { t } = Astro.props;
+---
+
+<div class="mb-8">
+  <h2 class="text-black mt-8 mb-2 text-2xl font-bold tracking-wide">
+    {t.education}
+  </h2>
+  <div class="ml-2 pl-6">
+    <div class="flex gap-3 items-start mb-6 flex-col sm:flex-row">
+      <img
+        src="/assets/gtech.png"
+        alt="Georgia Tech logo"
+        class="w-20 h-20 shrink-0 rounded-lg object-cover shadow-md bg-white sm:w-24 sm:h-24"
+      />
+      <div class="flex-1">
+        <strong>{t.gtech.degree}</strong> &mdash; {t.gtech.school}<br />
+        {t.gtech.location}<br />
+        <em>{t.gtech.period}</em>
+      </div>
+    </div>
+    <div class="flex gap-3 items-start mb-6 flex-col sm:flex-row">
+      <img
+        src="/assets/ebs.jpg"
+        alt="EBS University logo"
+        class="w-20 h-20 shrink-0 rounded-lg object-cover shadow-md bg-white sm:w-24 sm:h-24"
+      />
+      <div class="flex-1">
+        <strong>{t.ebs.degree}</strong> &mdash; {t.ebs.school}<br />
+        {t.ebs.location}<br />
+        {t.ebs.period}
+      </div>
+    </div>
+    <div class="flex gap-3 items-start mb-6 flex-col sm:flex-row">
+      <img
+        src="/assets/vit.png"
+        alt="VIT University logo"
+        class="w-20 h-20 shrink-0 rounded-lg object-cover shadow-md bg-white sm:w-24 sm:h-24"
+      />
+      <div class="flex-1">
+        <strong>{t.vit.degree}</strong> &mdash; {t.vit.school}<br />
+        {t.vit.location}<br />
+        {t.vit.period}
+      </div>
+    </div>
+  </div>
+</div>

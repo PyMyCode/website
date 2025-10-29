@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Data Analytics Consultant - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    .lang-dropdown {
+        position: absolute;
+        top: 24px;
+        right: 36px;
+        z-index: 10;
+    }
+    /* profile image */
+    .profile-row {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        box-shadow: 0 6px 18px rgba(60,60,120,0.12);
+        flex: 0 0 120px;
+    }
+    @media (max-width: 600px) {
+        .profile-img { width: 88px; height: 88px; }
+    }
+        body {
+            font-family: "Lucida Console", "Monaco", monospace;
+            background: linear-gradient(120deg, #f7f9fb 0%, #e3eafc 100%);
+            margin: 0;
+            color: #222;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(60,60,120,0.10);
+            padding: 44px 36px 36px 36px;
+            animation: fadeIn 1.2s cubic-bezier(.4,0,.2,1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-size: 2.7rem;
+            margin-bottom: 0.2em;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        h2 {
+            color: #000000;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        .subtitle {
+            color: #555;
+            font-size: 1.15rem;
+            margin-bottom: 1.5em;
+        }
+        .section {
+            margin-bottom: 2em;
+        }
+        ul {
+            padding-left: 1.2em;
+        }
+        .timeline {
+            border-left: 0px solid #637180;
+            margin-left: 0.5em;
+            padding-left: 1.5em;
+        }
+        .timeline-item {
+            margin-bottom: 1.5em;
+            position: relative;
+        }
+        /* Two-column timeline item: thumb + content */
+        .timeline-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+        .timeline-thumb {
+            width: 72px;
+            height: 72px;
+            flex: 0 0 72px;
+            border-radius: 8px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            background: #fff;
+        }
+        .timeline-content {
+            flex: 1 1 auto;
+        }
+        @media (max-width: 600px) {
+            .timeline-item { flex-direction: column; }
+            .timeline-thumb { width: 88px; height: 88px; flex: 0 0 88px; }
+        }
+        .contact {
+            margin-top: 2em;
+            text-align: center;
+        }
+        .contact a {
+            color: #000000;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .contact a:hover {
+            color: #0d47a1;
+        }
+        .tech-bar {
+            height: 6px;
+            border-radius: 3px;
+            background: linear-gradient(90deg, #000000 60%, #e3eafc 100%);
+            margin-bottom: 18px;
+            animation: growBar 1.2s cubic-bezier(.4,0,.2,1);
+        }
+        @keyframes growBar {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        .project {
+            background: #f7f9fb;
+            border-radius: 8px;
+            padding: 12px 18px;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 8px rgba(60,60,120,0.04);
+            transition: box-shadow 0.3s;
+        }
+        .project:hover {
+            box-shadow: 0 4px 16px rgba(60,60,120,0.10);
+        }
+        /* Video styles */
+        .intro-video {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+        }
+        /* Custom video controls styling */
+        .intro-video::-webkit-media-controls-panel,
+        .intro-video::-webkit-media-controls-enclosure {
+            background: transparent;
+        }
+        .intro-video::-webkit-media-controls-timeline,
+        .intro-video::-webkit-media-controls-current-time-display,
+        .intro-video::-webkit-media-controls-time-remaining-display,
+        .intro-video::-webkit-media-controls-timeline-container {
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .intro-video::-webkit-media-controls-play-button {
+            filter: brightness(0) invert(1);
+            opacity: 0.9;
+        }
+        /* Utility to hide caption visually but keep it available to screen readers */
+        .visually-hidden {
+            position: absolute !important;
+            height: 1px; width: 1px;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+            white-space: nowrap;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 18px 6px; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Language dropdown removed -->
+    <div class="container" id="resume-content">
+    <div>
+        <div class="profile-row">
+            <img src="profile.jpg" alt="Neerav Gala" class="profile-img">
+            <div>
+                <h1>Neerav Gala</h1>
+                </span> Real Estate 🏠 Data Analytics 🤖 Consultant </div>
+
+            </div>
+        </div>
+        <div class="contact">
+                <a href="mailto:neeravgala1994@gmail.com">Email</a> |
+                <a href="https://www.linkedin.com/in/neeravnemchandgala/" target="_blank">LinkedIn</a> |
+                <a href="https://github.com/PyMyCode" target="_blank">GitHub</a>
+        </div>
+             <div class="tech-bar"></div>
+            <div class="section">
+                <h2>Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <img src="assets/patrizia.png" alt="PATRIZIA SE logo" class="timeline-thumb">
+                        <div class="timeline-content">
+                            <strong>Associate (Investment Planning and Reporting) </strong> &mdash; PATRIZIA SE <br>
+                            Frankfurt am Main, Germany <br>
+                            Feb 2020 - May 2025
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <img src="assets/cushman.jpg" alt="Cushman and Wakefield logo" class="timeline-thumb">
+                        <div class="timeline-content">
+                            <strong>Intern - Valuation </strong> &mdash; Cushman and Wakefield<br>
+                            Frankfurt am Main, Germany <br>
+                            Feb 2019 - Dec 2019
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <img src="assets/meenakshi.jpg" alt="Meenakshi Infrastructure logo" class="timeline-thumb">
+                        <div class="timeline-content">
+                            <strong>Engineer Trainee</strong> &mdash; Meenakshi Infrastructure<br>
+                            Hyderabad, India <br>
+                            Dec 2016 - May 2017
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <img src="assets/gtech.png" alt="Georgia Tech logo" class="timeline-thumb">
+                        <div class="timeline-content">
+                            <strong>MSc Data Analytics &mdash;</strong>
+                            Georgia Institute of Technology<br>
+                            Online<br>
+                            <em>Aug 2024 - current</em>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <img src="assets/ebs.jpg" alt="EBS University logo" class="timeline-thumb">
+                        <div class="timeline-content">
+                            <strong>MSc Real Estate</strong> &mdash; EBS University<br>
+                            Oestrich Winkel, Germany<br>
+                            Jan 2018 - Nov 2020
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <img src="assets/vit.png" alt="VIT University logo" class="timeline-thumb">
+                        <div class="timeline-content">
+                            <strong>Bachelors Civil Engineering</strong> &mdash; VIT University<br>
+                            Vellore, India<br>
+                            Jan 2018 - Nov 2020
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Projects/Papers</h2>
+                <div class="project">
+                    <strong>EBS University Master Thesis - German rental price prediction</strong><br>
+                    Comparison of Different Regression
+                    Methodologies for Rental Price Prediction
+                    in the German Residential Market<br>
+                    <img src="assets/presentation_filler.jpg" alt="Description of the image" style="width:600px; height:auto;">
+                </div>
+                <div class="project">
+                    <strong>RealRobo - Automated Real Estate Analyst</strong><br>
+                    An LLM chatbot that uses decision trees algorithm to 
+                    calculate the feature that 
+                    has the highest impact of the sales price of a house. 
+                    And also backs it up with some explanation.
+                    <!-- Intro video with controls -->
+                    <figure style="margin:18px 0 6px; position: relative;">
+                        <video id="intro-video" class="intro-video" autoplay muted loop playsinline controls poster="assets/intro-poster.jpg" aria-describedby="intro-desc">
+                            <source src="assets/intro.mp4" type="video/mp4">
+                            <source src="assets/intro.webm" type="video/webm">
+                            Your browser does not support the video element.
+                        </video>
+                        <figcaption id="intro-desc" class="visually-hidden">Intro clip demonstrating data visualizations related to real estate analytics. Video controls available for play, pause, and timeline navigation.</figcaption>
+                    </figure>
+                </div>
+                <div class="project">
+                    <strong>Georgia Institute of Technology - Project Paper</strong><br>
+                    Classification of Brain Tumors using Hybrid Deep Learning Models<br>
+                    Article Link : <a href="https://arxiv.org/abs/2508.01350" target="_blank" rel="noopener noreferrer">https://arxiv.org/abs/2508.01350</a>
+                    <img src="assets/cnn.jpg" alt="Description of the image">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

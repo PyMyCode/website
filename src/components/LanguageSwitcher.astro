@@ -1,0 +1,32 @@
+---
+interface Props {
+  currentLang: "en" | "de";
+}
+
+const { currentLang } = Astro.props;
+---
+
+<div class="fixed top-6 left-6 z-50">
+  <div class="inline-flex rounded-lg shadow-lg bg-white border border-gray-200">
+    <a
+      href="/"
+      class={`px-4 py-2 text-sm font-medium rounded-l-lg transition-colors duration-200 ${
+        currentLang === "en"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-gray-700 hover:bg-gray-50"
+      }`}
+    >
+      EN
+    </a>
+    <a
+      href="/de"
+      class={`px-4 py-2 text-sm font-medium rounded-r-lg transition-colors duration-200 ${
+        currentLang === "de"
+          ? "bg-blue-600 text-white"
+          : "bg-white text-gray-700 hover:bg-gray-50"
+      }`}
+    >
+      DE
+    </a>
+  </div>
+</div>

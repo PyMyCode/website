@@ -1,0 +1,37 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import ResumeLayout from "../components/ResumeLayout.astro";
+import ProfileSection from "../components/home/ProfileSection.astro";
+import ContactLinks from "../components/home/ContactLinks.astro";
+import TechBar from "../components/home/TechBar.astro";
+import ExperienceSection from "../components/home/ExperienceSection.astro";
+import EducationSection from "../components/home/EducationSection.astro";
+import ProjectsSection from "../components/home/ProjectsSection.astro";
+import LanguageSwitcher from "../components/LanguageSwitcher.astro";
+import { translations } from "../i18n/translations";
+import profile from "../../public/profile.jpg";
+
+const t = translations.en;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={t.siteTitle}
+      description={t.siteDescription}
+      image={profile}
+    />
+  </head>
+  <body class="flex items-center justify-center min-h-screen">
+    <LanguageSwitcher currentLang="en" />
+    <ResumeLayout>
+      <ProfileSection t={t} />
+      <ContactLinks t={t} />
+      <TechBar />
+      <ExperienceSection t={t} />
+      <EducationSection t={t} />
+      <ProjectsSection t={t} />
+    </ResumeLayout>
+  </body>
+</html>

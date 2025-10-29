@@ -1,0 +1,53 @@
+---
+import type { TranslationKey } from "../../i18n/translations";
+
+interface Props {
+  t: TranslationKey;
+}
+
+const { t } = Astro.props;
+---
+
+<div class="mb-8">
+  <h2 class="text-black mt-8 mb-2 text-2xl font-bold tracking-wide">
+    {t.experience}
+  </h2>
+  <div class="ml-2 pl-6">
+    <div class="flex gap-3 items-start mb-6 flex-col sm:flex-row">
+      <img
+        src="/assets/patrizia.png"
+        alt="PATRIZIA SE logo"
+        class="w-20 h-20 shrink-0 rounded-lg object-cover shadow-md bg-white sm:w-24 sm:h-24"
+      />
+      <div class="flex-1">
+        <strong>{t.patrizia.title}</strong> &mdash; {t.patrizia.company}<br />
+        {t.patrizia.location} <br />
+        {t.patrizia.period}
+      </div>
+    </div>
+    <div class="flex gap-3 items-start mb-6 flex-col sm:flex-row">
+      <img
+        src="/assets/cushman.jpg"
+        alt="Cushman and Wakefield logo"
+        class="w-20 h-20 shrink-0 rounded-lg object-cover shadow-md bg-white sm:w-24 sm:h-24"
+      />
+      <div class="flex-1">
+        <strong>{t.cushman.title}</strong> &mdash; {t.cushman.company}<br />
+        {t.cushman.location} <br />
+        {t.cushman.period}
+      </div>
+    </div>
+    <div class="flex gap-3 items-start mb-6 flex-col sm:flex-row">
+      <img
+        src="/assets/meenakshi.jpg"
+        alt="Meenakshi Infrastructure logo"
+        class="w-20 h-20 shrink-0 rounded-lg object-cover shadow-md bg-white sm:w-24 sm:h-24"
+      />
+      <div class="flex-1">
+        <strong>{t.meenakshi.title}</strong> &mdash; {t.meenakshi.company}<br />
+        {t.meenakshi.location} <br />
+        {t.meenakshi.period}
+      </div>
+    </div>
+  </div>
+</div>
